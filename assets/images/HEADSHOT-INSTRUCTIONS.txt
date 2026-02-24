@@ -1,0 +1,35 @@
+HEADSHOT PLACEMENT INSTRUCTIONS
+══════════════════════════════════════════════════════════════
+
+FILE REQUIRED: headshot.jpg
+
+STEPS:
+1. Use a professional, high-quality headshot photo.
+2. Name the file exactly: headshot.jpg
+3. Place it in this folder: /assets/images/
+   → Full path: Hope-Balentine-Professional-website/assets/images/headshot.jpg
+
+4. Delete this HEADSHOT-INSTRUCTIONS.txt after placing the image.
+
+PHOTO SPECIFICATIONS (recommended):
+  - Format: JPG or WebP
+  - Dimensions: 760×760px minimum (square or portrait crop)
+  - Object position: Centered on face, shoulders visible
+  - Background: Neutral — cream, white, soft gray, or deep navy
+  - Lighting: Professional lighting, warm tone preferred
+  - Attire: Executive business professional
+
+OG (SOCIAL PREVIEW) IMAGE:
+  Also place a social preview image:
+    File: og-preview.jpg
+    Location: /assets/images/og-preview.jpg
+    Dimensions: 1200×630px (standard Open Graph size)
+    Content: Name, title, and headshot overlaid on navy background
+
+FALLBACK BEHAVIOR:
+  If headshot.jpg is missing or fails to load, the site will
+  automatically display a stylized "HB" monogram placeholder
+  in Deep Navy with Soft Gold letters. The site will still
+  look polished without the photo.
+
+══════════════════════════════════════════════════════════════

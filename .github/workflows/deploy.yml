@@ -1,0 +1,126 @@
+# ═══════════════════════════════════════════════════════════
+# GitHub Actions CI/CD — Auto Deploy to GitHub Pages
+# Hope Balentine Professional Website
+# ═══════════════════════════════════════════════════════════
+#
+# HOW IT WORKS:
+#   1. On every push to `main` branch, this workflow triggers.
+#   2. It checks out the repository.
+#   3. It deploys the static site to the `gh-pages` branch.
+#   4. GitHub Pages serves from that branch automatically.
+#
+# SETUP STEPS (one time):
+#   1. Go to: Settings → Pages
+#   2. Source: "Deploy from a branch"
+#   3. Branch: gh-pages / root
+#   4. Save and wait ~2 minutes for first deploy.
+#
+# LIVE URL after deploy:
+#   https://debalent.github.io/Hope-Balentine-Professional-website/
+# ═══════════════════════════════════════════════════════════
+
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main
+  # Allow manual trigger from GitHub Actions tab
+  workflow_dispatch:
+
+# Sets permissions for the GITHUB_TOKEN
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Allow one concurrent deployment
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  # ─── Job 1: Validate (lightweight checks) ───
+  validate:
+    name: Validate Site Files
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Verify required files exist
+        run: |
+          echo "✓ Verifying required project files..."
+
+          files=(
+            "index.html"
+            "assets/css/style.css"
+            "assets/js/main.js"
+          )
+
+          for file in "${files[@]}"; do
+            if [ -f "$file" ]; then
+              echo "  ✓ $file found"
+            else
+              echo "  ✗ MISSING: $file"
+              exit 1
+            fi
+          done
+
+          echo "✓ All required files present."
+
+      - name: Check HTML structure
+        run: |
+          echo "✓ Checking HTML integrity..."
+          if grep -q '<title>' index.html; then
+            echo "  ✓ <title> tag found"
+          else
+            echo "  ✗ Missing <title> tag"
+            exit 1
+          fi
+          if grep -q 'meta name="description"' index.html; then
+            echo "  ✓ Meta description found"
+          else
+            echo "  ✗ Missing meta description"
+          fi
+          if grep -q 'application/ld+json' index.html; then
+            echo "  ✓ Structured data (JSON-LD) found"
+          else
+            echo "  ✗ Missing structured data"
+          fi
+          echo "✓ HTML check complete."
+
+  # ─── Job 2: Deploy ───
+  deploy:
+    name: Deploy to GitHub Pages
+    needs: validate
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v4
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          # Upload entire repository (static site — no build step needed)
+          path: '.'
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
+
+      - name: Deployment Summary
+        run: |
+          echo "═══════════════════════════════════════════════"
+          echo " ✓ Hope Balentine site deployed successfully!"
+          echo " 🌐 URL: ${{ steps.deployment.outputs.page_url }}"
+          echo "═══════════════════════════════════════════════"

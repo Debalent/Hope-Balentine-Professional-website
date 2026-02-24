@@ -1,0 +1,33 @@
+RESUME PLACEMENT INSTRUCTIONS
+══════════════════════════════════════════════════════════════
+
+FILE REQUIRED: Hope-Balentine-Resume.pdf
+
+STEPS:
+1. Export your resume as a PDF file.
+2. Name the file exactly: resume.pdf
+3. Place it in this folder: /assets/
+   → Full path: Hope-Balentine-Professional-website/assets/resume.pdf
+
+4. Delete this README.txt file after placing the PDF.
+
+The site already references /assets/resume.pdf in:
+  - Navigation "Resume" button
+  - Hero CTA "Download Resume" button
+  - Resume Download section (Section 5)
+  - Contact section links
+  - Footer links
+
+All download attributes are already configured to save as:
+  "Hope-Balentine-Resume.pdf"
+
+FORMATTING TIPS FOR YOUR RESUME PDF:
+  - Use the Playfair Display + Inter font pairing to match the site
+  - Match the Navy (#1C2A39) and Gold (#C6A85E) color scheme
+  - Keep to 1-2 pages maximum for executive positioning
+  - Use the same strategic role titles as on this site:
+      Walmart:       Corporate Operations & Systems Coordination Specialist
+      Ally Bank:     Financial Account & Client Solutions Specialist
+      Embassy Suites: Front Office Operations Supervisor & Guest Experience Lead
+
+══════════════════════════════════════════════════════════════
