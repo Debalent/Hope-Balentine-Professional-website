@@ -7,29 +7,37 @@ endobj
 << /Type /Pages /Kids [3 0 R] /Count 1 >>
 endobj
 3 0 obj
-<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents 4 0 R /Resources << /Font << /F1 5 0 R >> >> >>
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents 4 0 R /Resources << /Font << /F1 5 0 R /F2 6 0 R >> >> >>
 endobj
 4 0 obj
-<< /Length 1234 >>
+<< /Length 1800 >>
 stream
 BT
-/F1 18 Tf
-70 750 Td
+/F2 24 Tf
+306 750 Td
+0 0 1 rg
 (HOPE BALENTINE) Tj
 /F1 12 Tf
 0 -30 Td
+0 0 0 rg
 (Tulsa, OK 74127 \(479-250-2572\) balentinehope25@gmail.com) Tj
 0 -30 Td
+0.2 0.6 0.4 rg
 (SUMMARY) Tj
 0 -18 Td
+0 0 0 rg
 (Goal-oriented professional with 15+ years of cross-industry experience in hospitality, healthcare, financial services, logistics, and corporate operations. Recognized for operational excellence, customer-centered leadership, and a proven ability to thrive in fast-paced environments. Highly motivated, adaptable, and detail-oriented, with a strong work ethic and a passion for continual self-improvement.) Tj
 0 -36 Td
+0.9 0.7 0.2 rg
 (SKILLS) Tj
 0 -18 Td
+0 0 0 rg
 (Operational Leadership, Effective Communication, Organizational & Time Management, Multitasking & Prioritization, Customer Service Excellence, Process Optimization, Team Training & Supervision, Problem Solving) Tj
 0 -36 Td
+0.1 0.2 0.6 rg
 (EXPERIENCE) Tj
 0 -18 Td
+0 0 0 rg
 (Front Office Operations Supervisor, Embassy Suites by Hilton Tulsa, Tulsa, OK, Mar 2025 – Present) Tj
 0 -14 Td
 (Supervise front desk teams, resolve guest escalations, and uphold Hilton brand standards. Oversee daily operations, ensuring exceptional guest experiences and efficient check-in/out processes. Train and mentor staff, fostering a culture of service excellence and teamwork. Implement process improvements to streamline operations and enhance guest satisfaction.) Tj
@@ -50,8 +58,10 @@ BT
 0 -14 Td
 (Managed content for company hotlines and knowledgebase, collaborating with stakeholders. Oversaw user authentication and data access, ensuring security and compliance. Identified process gaps, proposed solutions, and reduced operational costs. Designed information pages for ease of access and improved internal communications.) Tj
 0 -30 Td
+0.2 0.6 0.4 rg
 (EDUCATION) Tj
 0 -18 Td
+0 0 0 rg
 (High School Diploma, Rogers High School, Rogers, AR) Tj
 ET
 endstream
@@ -59,16 +69,20 @@ endobj
 5 0 obj
 << /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
 endobj
+6 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Arial >>
+endobj
 xref
-0 6
+0 7
 0000000000 65535 f 
 0000000010 00000 n 
 0000000061 00000 n 
 0000000116 00000 n 
 0000000272 00000 n 
 0000001530 00000 n 
+0000001600 00000 n 
 trailer
-<< /Size 6 /Root 1 0 R >>
+<< /Size 7 /Root 1 0 R >>
 startxref
-1632
+1700
 %%EOF
