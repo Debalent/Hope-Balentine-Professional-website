@@ -22,7 +22,7 @@ Goal-oriented professional with 15+ years of cross-industry experience in hospit
 
 ## EXPERIENCE
 
-**Front Desk Lead**  
+**Guest Services Lead**  
 *Embassy Suites by Hilton Tulsa* — Tulsa, OK  
 *Mar 2025 – Present*
 - Train and onboard new front desk team members, ensuring alignment with Hilton brand standards
