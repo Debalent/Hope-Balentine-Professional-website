@@ -22,13 +22,15 @@ Goal-oriented professional with 15+ years of cross-industry experience in hospit
 
 ## EXPERIENCE
 
-**Front Office Operations Supervisor**  
+**Front Desk Lead**  
 *Embassy Suites by Hilton Tulsa* — Tulsa, OK  
 *Mar 2025 – Present*
-- Supervise front desk teams, resolve guest escalations, and uphold Hilton brand standards.
-- Oversee daily operations, ensuring exceptional guest experiences and efficient check-in/out processes.
-- Train and mentor staff, fostering a culture of service excellence and teamwork.
-- Implement process improvements to streamline operations and enhance guest satisfaction.
+- Train and onboard new front desk team members, ensuring alignment with Hilton brand standards
+- Support daily front desk operations in a high-volume hospitality environment
+- Provide mentorship and guidance to new hires to strengthen service consistency
+- Assist in maintaining smooth check-in/check-out workflows
+- Support resolution of guest concerns to preserve positive guest experiences
+- Contribute to operational efficiency through workflow consistency and process support
 
 **Financial Account & Client Solutions Specialist**  
 *Ally Bank* — Tulsa, OK  
