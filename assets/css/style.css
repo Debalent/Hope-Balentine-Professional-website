@@ -1703,7 +1703,10 @@ h1, h2, h3, h4, h5, h6 {
 ───────────────────────────────────── */
 .testimonials {
   padding: var(--section-py) 0;
-  background: var(--bg-secondary);
+  background:
+    radial-gradient(circle at 5% 0%, rgba(198, 168, 94, 0.10) 0%, transparent 55%),
+    radial-gradient(circle at 95% 100%, rgba(28, 42, 57, 0.18) 0%, transparent 55%),
+    var(--bg-secondary);
 }
 
 .testimonials-grid {
@@ -1758,6 +1761,8 @@ h1, h2, h3, h4, h5, h6 {
   line-height: var(--leading-relaxed);
   font-style: italic;
   flex: 1;
+  position: relative;
+  z-index: 1;
 }
 
 .testimonial-footer {
